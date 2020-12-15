@@ -6,6 +6,6 @@ end
 
 def count_empty_strings(array)
   array.count do |element|
-    element.kind_of? String
+    element.kind_of? String || element.includes? ""
   end
 end
